@@ -27,7 +27,7 @@ Before running or testing our typescript code we must first transpile/compile it
 $ tsc <filename>.ts
 ```
 
-This will conver your code into javascript and create a javascript file with the same name.
+This will convert your code into javascript and create a javascript file with the same name.
 To run your javascript file use the following code:
 
 ```

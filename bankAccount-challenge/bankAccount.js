@@ -1,22 +1,25 @@
 "use strict";
 exports.__esModule = true;
 var bankAccount = /** @class */ (function () {
-    function bankAccount() {
+    function bankAccount(owner, balance) {
+        this.transactions = [];
+        this.owner = owner;
+        this.balance = balance;
     }
-    //   constructor() {};
     bankAccount.prototype.getBalance = function () {
-        this.transactions.push(this.balance);
-        return "Account Balance: " + this.balance + ".";
+        return this.balance;
     };
     bankAccount.prototype.withdrawal = function (withdrawalAmount) {
         var balAfterWD = this.balance - withdrawalAmount;
-        this.transactions.push("Withdrawal Amount: " + withdrawalAmount + ", New Balance: " + balAfterWD);
-        return balAfterWD;
+        this.balance = balAfterWD;
+        this.transactions.push(withdrawalAmount);
+        return withdrawalAmount;
     };
     bankAccount.prototype.deposit = function (depositAmount) {
         var balAfterDep = this.balance + depositAmount;
-        this.transactions.push("Deposit Amount: " + depositAmount + ", New Balance: " + balAfterDep);
-        return balAfterDep;
+        this.balance = balAfterDep;
+        this.transactions.push(depositAmount);
+        return depositAmount;
     };
     return bankAccount;
 }());

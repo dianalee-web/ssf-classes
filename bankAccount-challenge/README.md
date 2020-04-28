@@ -7,11 +7,11 @@
 
 <!-- - write a method called getBalance to retrieve the current balance. -->
 
-- write a method called withdrawal to withdraw a given amount.
-- write a method called deposit to deposit a given amount.
-- each method that impacts the balance should add on entry to the transactions array
-- Your code must succesfully transpile and pass all tests.
-- Convert the code to javascript by running the following command.
+<!-- - write a method called withdrawal to withdraw a given amount. -->
+<!-- - write a method called deposit to deposit a given amount. -->
+<!-- - each method that impacts the balance should add on entry to the transactions array -->
+<!-- - Your code must succesfully transpile and pass all tests. -->
+<!-- - Convert the code to javascript by running the following command. -->
 
 ```
 $ tsc bankAccount.ts
